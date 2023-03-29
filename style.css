@@ -78,7 +78,8 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.passbox {
+#passbox {
+    font-size: 100px;
     width: 30rem;
     padding: 130px;
     margin: .75rem;
