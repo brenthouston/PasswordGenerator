@@ -3,13 +3,16 @@ var generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", writePassword);
 
 function writePassword() {
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 }
 
-var globalPassword = [];
+
+
+// Empty array that is filled with lowerCase, upperCase, numbers array, and symbols array based on user preference.
 var userChoicePassPoss = [];
 
 //will have to make arrays of lower and upper letters, numbers, and symbols
@@ -90,7 +93,13 @@ var symbArr = [
   "?",
 ];
 
+// function that starts on generate button click
+
 function generatePassword() {
+
+    //User prompts which concatenates the arrays based on user preference
+
+
   var passwordLength = window.prompt(
     "What is the length of the password you wish to create? Let's make it between 8 and 128 Characters."
   );
@@ -148,6 +157,9 @@ function generatePassword() {
   }
   console.log(userChoicePassPoss);
 
+
+  //Arrow function to generate random password from user created array then return as a string with no commas
+
   var getPassword = (a, n) => {
     var l = a.slice();
     var o = [];
@@ -157,16 +169,6 @@ function generatePassword() {
     return o.toString("").replaceAll(",", "");
   };
 
-  var generateBtn = document.querySelector("#generate");
-
-  generateBtn.addEventListener("click", writePassword);
-
-  function writePassword() {
-    var password = getPassword(userChoicePassPoss, passwordLength);
-    var passwordText = document.querySelector("#password");
-
-    passwordText.value = password;
-  }
 
   console.log(getPassword(userChoicePassPoss, passwordLength));
 }
