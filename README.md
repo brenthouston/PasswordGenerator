@@ -31,5 +31,5 @@ Project is created with:
 ## Deployed App Screenshots
 
 Loaded on mobile viewport
-![Generate Password](https://github.com/brenthouston/Portfolio/blob/main/Images/deployed%20site%20loaded%20to%20small%20vierport.png)
+![Generate Password](https://github.com/brenthouston/PasswordGenerator/blob/main/03-javascript-homework-demo.png)
 
