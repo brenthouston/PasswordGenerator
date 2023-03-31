@@ -20,7 +20,7 @@ Project is created with:
 
 ## Links
 - [Link to deployed site](https://brenthouston.github.io/PasswordGenerator/)
-- [Link to code repository](https://github.com/brenthouston/PasswordGenerator)
+
 	
 ## Resources
 - [MDN](https://developer.mozilla.org/en-US/)
