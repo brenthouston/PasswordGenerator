@@ -169,6 +169,6 @@ function generatePassword() {
     return o.toString("").replaceAll(",", "");
   };
 
-
+  return getPassword(userChoicePassPoss, passwordLength);
   console.log(getPassword(userChoicePassPoss, passwordLength));
 }
